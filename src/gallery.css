@@ -70,7 +70,19 @@
     top:5px;
     right:15px;
 }
-@media (max-width:500px){
+
+.btn_show button{
+    position:relative;
+    left:80%;
+    width:15%;
+    height:28px;
+    border-radius:5px;
+    margin-bottom:20px;
+    color:white;
+    font-size:95%;
+}
+
+@media (max-width:600px){
     .gallery {
         -webkit-column-count: 3;
         -moz-column-count: 3; 
@@ -86,9 +98,22 @@
         margin-top: 10px;
         
     }
+    .btn_show button{
+        position:relative;
+        left:35%;
+        width:30%;
+        height:22px;
+        color:white;
+        font-size:85%;
+    }
 }
 
-
+/*
+<div className=' bg-bg1 h-screen w-full items-center justify-center text-white flex'>
+     <div className='p-4 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center '>
+      <Gallery/>
+    </div> 
+    </div>*/
 
 /*.gallery {
     display: grid;
