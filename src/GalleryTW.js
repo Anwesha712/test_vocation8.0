@@ -10,6 +10,10 @@ import Img6 from "./assets/Img6.jpeg";
 import Img7 from "./assets/Img7.jpeg";
 import Img8 from "./assets/Img8.jpeg";
 import Img9 from "./assets/Img9.jpeg";
+import Img10 from "./assets/Img10.jpeg";
+import Img11 from "./assets/Img11.jpeg";
+import Img12 from "./assets/Img12.jpeg";
+import Img13 from "./assets/Img13.jpeg";
 let data = [
   {
     id: 1,
@@ -47,11 +51,31 @@ let data = [
     id: 9,
     imgSrc: Img9,
   },
+  {
+    id: 10,
+    imgSrc: Img10,
+  },
+  {
+    id: 11,
+    imgSrc: Img11,
+  },
+  {
+    id: 12,
+    imgSrc: Img12,
+  },
+  {
+    id: 13,
+    imgSrc: Img13,
+  },
 ];
 const GalleryTW = () => {
   const [image, setImage] = useState(data[0].imgSrc);
   const handleImageClick = (image) => {
     setImage(image);
+  };
+const [visible, setVisible] = useState(9);
+  const showMore = () => {
+    setVisible((prevValue) => prevValue + 4);
   };
 
   return (
@@ -61,7 +85,7 @@ const GalleryTW = () => {
         <img src={image} className="w-full h-full object-contain" alt="" />
       </div>
       <div className="columns-2 md:columns-3 lg:columns-4 box-border w-full md:w-4/5 mx-auto  gap-x-4 gap-y-4">
-        {data.map((image, index) => (
+        {data.slice(0,visible).map((image, index) => (
           <div className="h-fit w-fit hover:scale-110  duration-500 transform">
             <img
               onClick={() => handleImageClick(image.imgSrc)}
@@ -72,7 +96,7 @@ const GalleryTW = () => {
             />
           </div>
         ))}
-        <div className="inline-flex w-full  h-32 bg-gray-900 transition duration-500 transform hover:scale-110  z-0 rounded-md text-white font-semibold text-3xl  flex-col justify-center px-4 font-font3 cursor-pointer">
+        <div onClick={showMore} className="inline-flex w-full  h-32 bg-gray-900 transition duration-500 transform hover:scale-110  z-0 rounded-md text-white font-semibold text-3xl  flex-col justify-center px-4 font-font3 cursor-pointer">
           See More
         </div>
       </div>

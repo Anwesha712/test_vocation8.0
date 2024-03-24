@@ -74,7 +74,7 @@ const Gallery = () => {
     {
       id: 14,
       imgSrc: Img14,
-    },
+    }
   ];
 
   const [model, setModel] = useState(false);
