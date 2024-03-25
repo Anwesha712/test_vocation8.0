@@ -3,11 +3,14 @@ import Srinjoy from "./assets/SrinjoyGhosh.jpg";
 import Patatri from "./assets/PatatriSinha.jpeg";
 import Sarban from "./assets/SarbanBose.jpg";
 import Sammonnay from "./assets/SammonnaySarcar.jpeg";
+import Joyorshi from "./assets/JoyorshiDe.jpg";
+import Parag from "./assets/ParagChakraborty.jpeg";
 import Sourish from "./assets/SourishGuha.jpeg";
 import Sampreeti from "./assets/SampreetiDas.jpg";
 import Shrestho from "./assets/ShresthoChakraborty.jpg";
 import Gairika from "./assets/GairikaKarmakar.jpeg";
 import Ahana from "./assets/AhanaSaha.jpeg";
+import Riyanshu from "./assets/RiyanshuBaskey.jpeg";
 const members = [
   {
     id: 1,
@@ -55,12 +58,21 @@ const members = [
   },
   {
     id: 6,
-    imgSrc: Img1,
+    imgSrc: Parag,
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
+      "Hi, I am Parag Chakraborty, SARGAM's cultural advisor. I try to paint a cultural landscape for our club with myriads of hues of music.",
     name: "Parag Chakraborty",
     fb: "https://www.facebook.com/parag.chakraborty.1048?mibextid=ZbWKwL",
     insta: "https://www.instagram.com/parag_c.01?igsh=ZWgyNWN5OGxmb2Z3",
+  },
+  {
+    id: 12,
+    imgSrc: Joyorshi,
+    about:
+      "As a joint-head of the organization, we serve as the conductors of our musical ensemble, ensuring that all parts work together in perfect rhythm.",
+    name: "Joyorshi De",
+    fb: "https://www.facebook.com/joyorshi.de",
+    insta: "https://www.instagram.com/joyorshi_de/",
   },
   {
     id: 7,
@@ -101,12 +113,12 @@ const members = [
   },
   {
     id: 11,
-    imgSrc: Img1,
+    imgSrc: Riyanshu,
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
+      "Riyanshu Baskey this side. The Deputy PR Head of the Club. Working to enhance the administrative works of the club",
     name: "Riyanshu Baskey",
-    fb: "https://www.facebook.com/",
-    insta: "https://www.facebook.com/",
+    fb: "https://www.facebook.com/dominator.inc.1",
+    insta: "https://www.instagram.com/iam_rbaskey/",
   },
 ];
 
