@@ -13,27 +13,11 @@ const Up_event = () => {
         body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque cum illo porro quidem ut laudantium facilis vel saepe beatae.",
         date: "abc",
         venue: "abc",
-    },
-    {
-        id: 2,
-        imgSrc: Img1,
-        head: "Vocations 7.0",
-        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque cum illo porro quidem ut laudantium facilis vel saepe beatae.",
-        date: "abc",
-        venue: "abc",
-    },
-    {
-        id: 3,
-        imgSrc: Img1,
-        head: "Vocations 7.0",
-        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque cum illo porro quidem ut laudantium facilis vel saepe beatae.",
-        date: "abc",
-        venue: "abc",
     }
     ]
     return(
         <>
-        <div className="font-black text-5xl text-white my-4 mx-auto center ml-20">
+        <div className="main_head font-black text-5xl text-white my-4 mx-auto center">
           UPCOMING EVENTS
         </div>
          <div className="up inline-flex flex-wrap justify-center gap-2 w-full">
@@ -41,7 +25,7 @@ const Up_event = () => {
                 return(
                     <>
                     <div className="up_main">
-                    <div className="up_pic w-[40%] h-72 md:w-60 md:h-64" key={item.id}>
+                    <div className="up_pic" key={item.id}>
                         <img src={item.imgSrc} style={{width:'100%', height:"100%" }}/>
                     </div>
                     <div className="up_write">
