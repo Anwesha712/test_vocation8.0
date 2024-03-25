@@ -1,126 +1,22 @@
 import React, { useState } from "react";
 import "./member.css";
-import Img1 from "./assets/Img1.jpeg";
 import Icon_fb from "./assets/icon_fb.png";
 import Icon_insta from "./assets/icon_insta.png";
 import { Link } from "react-router-dom";
-import Srinjoy from "./assets/SrinjoyGhosh.jpg";
-import Sourish from "./assets/SourishGuha.jpeg";
+import { members } from "./dataSet";
 const Member = () => {
-  let data = [
-    {
-      id: 1,
-      imgSrc: Srinjoy,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/srinjoy.ghosh.92",
-      insta: "https://www.instagram.com/_srinjoy_ghosh_/",
-    },
-    {
-      id: 2,
-      imgSrc: Sourish,
-      about:
-        "This is Sourish Guha speaking as the Cultural Advisor of SARGAM. Being a part of the SARGAM fam has been one of the most exciting happenings for me. The bond, the affection and the love for the art that this club shows in a rare find. ",
-      name: "Sourish Guha",
-      fb: "",
-      insta: "https://www.instagram.com/_the6stringguy",
-    },
-    {
-      id: 3,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-    {
-      id: 4,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-    {
-      id: 5,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-    {
-      id: 6,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-    {
-      id: 7,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-    {
-      id: 8,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-    {
-      id: 9,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-    {
-      id: 10,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-    {
-      id: 11,
-      imgSrc: Img1,
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
-      name: "Abc Abc",
-      fb: "https://www.facebook.com/",
-      insta: "https://www.facebook.com/",
-    },
-  ];
-  const [visible, setVisible] = useState(7);
+  const [visible, setVisible] = useState(11);
   const others = () => {
     setVisible((prevValue) => prevValue + 4);
   };
-
   return (
     <>
       <div className="inline-flex flex-col px-2 md:px-10 lg:px-48 w-full box-border h-fit bg-black">
         <div className="font-black text-5xl text-white my-4 mx-auto center">
           MEMBERS
         </div>
-        <div className="member inline-flex flex-wrap justify-center gap-2 w-full">
-          {data.slice(0, visible).map((item) => {
+        <div className=" inline-flex flex-wrap justify-center gap-2 w-full">
+          {members.slice(0, visible).map((item) => {
             return (
               <div className="photo w-[45%] h-72 md:w-60 md:h-64" key={item.id}>
                 <img
@@ -128,8 +24,10 @@ const Member = () => {
                   className="image object-cover h-full w-full"
                 />
                 <div className="write text-white w-full h-full box-border px-2">
-                  <div className="about">{item.about}</div>
-                  <div className="name">{item.name}</div>
+                  <div className="about leading-tight">{item.about}</div>
+                  <div className="name text-center font-semibold">
+                    {item.name}
+                  </div>
                   <div className="link inline-flex">
                     {item.fb.length > 5 && (
                       <div className="fb" style={{ background: "transparent" }}>
