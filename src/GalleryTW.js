@@ -73,7 +73,7 @@ const GalleryTW = () => {
   const handleImageClick = (image) => {
     setImage(image);
   };
-const [visible, setVisible] = useState(9);
+  const [visible, setVisible] = useState(9);
   const showMore = () => {
     setVisible((prevValue) => prevValue + 4);
   };
@@ -85,8 +85,10 @@ const [visible, setVisible] = useState(9);
         <img src={image} className="w-full h-full object-contain" alt="" />
       </div>
       <div className="columns-2 md:columns-3 lg:columns-4 box-border w-full md:w-4/5 mx-auto  gap-x-4 gap-y-4">
-        {data.slice(0,visible).map((image, index) => (
-          <div className="h-fit w-fit hover:scale-110  duration-500 transform">
+        {data.slice(0, visible).map((image, index) => (
+          <div
+            key={index}
+            className="h-fit w-fit hover:scale-110  duration-500 transform">
             <img
               onClick={() => handleImageClick(image.imgSrc)}
               key={index}
@@ -96,7 +98,9 @@ const [visible, setVisible] = useState(9);
             />
           </div>
         ))}
-        <div onClick={showMore} className="inline-flex w-full  h-32 bg-gray-900 transition duration-500 transform hover:scale-110  z-0 rounded-md text-white font-semibold text-3xl  flex-col justify-center px-4 font-font3 cursor-pointer">
+        <div
+          onClick={showMore}
+          className="inline-flex w-full  h-32 bg-gray-900 transition duration-500 transform hover:scale-110  z-0 rounded-md text-white font-semibold text-3xl  flex-col justify-center px-4 font-font3 cursor-pointer">
           See More
         </div>
       </div>

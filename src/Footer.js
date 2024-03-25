@@ -17,18 +17,10 @@ const Footer = () => {
           Contact Us: 7605802236
           <div className="inline-flex justify-center gap-4">
             <div className="w-8">
-              <img
-                src={fb}
-                className="w-full grayscale object-contain"
-                alt=""
-              />
+              <img src={fb} className="w-full object-contain" alt="" />
             </div>
             <div className="w-8">
-              <img
-                src={insta}
-                className="w-full grayscale object-contain"
-                alt=""
-              />
+              <img src={insta} className="w-full object-contain" alt="" />
             </div>
           </div>
         </div>
