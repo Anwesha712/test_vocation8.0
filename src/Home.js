@@ -5,14 +5,17 @@ import Hero2 from "./Hero2";
 import GalleryTW from "./GalleryTW";
 import Member from "./Member";
 import Footer from "./Footer";
+import Event from "./Event";
 
 const Home = () => {
   return (
     <>
       <div className="inline-flex flex-col">
         <Navbar className="hidden lg:relative" />
-        <Hero />
-        {/* <Hero2 /> */}
+        <Hero/>
+        <div className="p-4 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center ">
+          <Event/>
+        </div>
         <GalleryTW />
         <div className="p-4 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center ">
           <Member />
