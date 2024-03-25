@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./member.css";
 import Img1 from "./assets/Img1.jpeg";
-import Icon_fb from "./assets/fb1.png";
-import Icon_insta from "./assets/insta1.png";
+import Icon_fb from "./assets/icon_fb.png";
+import Icon_insta from "./assets/icon_insta.png";
 import { Link } from "react-router-dom";
 import Srinjoy from "./assets/SrinjoyGhosh.jpg";
 import Sourish from "./assets/SourishGuha.jpeg";
@@ -136,7 +136,7 @@ const Member = () => {
                         <Link
                           to={item.fb}
                           style={{ background: "transparent" }}>
-                          <img src={Icon_fb} style={{ width: "20%" }} alt="" />
+                          <img src={Icon_fb} style={{ width: "70%" }} alt="" />
                         </Link>
                       </div>
                     )}
@@ -151,7 +151,7 @@ const Member = () => {
                           style={{ background: "transparent" }}>
                           <img
                             src={Icon_insta}
-                            style={{ width: "25%" }}
+                            style={{ width: "70%" }}
                             alt=""
                           />
                         </Link>
