@@ -13,13 +13,16 @@ const Home = () => {
     <>
       <div className="inline-flex flex-col">
         <Navbar className="hidden lg:relative" />
-        <Hero/>
+        <Hero />
         <div className="p-4 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center ">
-        <Up_event />
+          <Event />
         </div>
         <GalleryTW />
-        <div className="p-4 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center ">
+        <div className="p-4 bg-black h-fit w-full shadow-2xl items-center justify-center ">
           <Member />
+        </div>
+        <div className="p-4 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center ">
+          <Up_event />
         </div>
         <Footer />
       </div>
