@@ -5,7 +5,7 @@ import Icon_insta from "./assets/icon_insta.png";
 import { Link } from "react-router-dom";
 import { members } from "./dataSet";
 const Member = () => {
-  const [visible, setVisible] = useState(11);
+  const [visible, setVisible] = useState(12);
   const others = () => {
     setVisible((prevValue) => prevValue + 4);
   };
