@@ -36,12 +36,12 @@ const Up_event = () => {
         <div className="font-black text-5xl text-white my-4 mx-auto center ml-20">
           UPCOMING EVENTS
         </div>
-         <div className="up">
+         <div className="up inline-flex flex-wrap justify-center gap-2 w-full">
          {data.map((item)=>{
                 return(
                     <>
                     <div className="up_main">
-                    <div className="up_pic" key={item.id}>
+                    <div className="up_pic w-[40%] h-72 md:w-60 md:h-64" key={item.id}>
                         <img src={item.imgSrc} style={{width:'100%', height:"100%" }}/>
                     </div>
                     <div className="up_write">
