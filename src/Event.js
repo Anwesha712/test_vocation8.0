@@ -1,45 +1,40 @@
-import React from 'react'
-import './event.css';
-import Img1 from './assets/Img1.jpeg';
-import rap from './assets/rap.jpg'
-import Wow from './assets/wow.png'
-import ekant from './assets/ekant.png'
-import amp from './assets/amp.png'
-import sync from './assets/sync.png'
-import come from './assets/comings.png'
 
+import React from "react";
+import "./event.css";
+import Img1 from "./assets/Img1.jpeg";
+import ekant from "./assets/EKANT.png";
+import sync from "./assets/SYNC 7.png";
+import amplify from "./assets/AMPLIFY.png";
+import wow from "./assets/Wings of words.png";
+import rap from "./assets/RAP.jpeg";
 export default function Event() {
-    let data=[
-        {
-            id: 1,
-            imgSrc: rap,
-        },
-        {
-            id: 2,
-            imgSrc: Wow,
-        },
-        {
-            id: 3,
-            imgSrc: ekant,
-        },
-        {
-            id: 4,
-            imgSrc: amp,
-        },
-        {
-            id: 5,
-            imgSrc: sync,
-        },
-        {
-            id: 6,
-            imgSrc: amp,
-        }
-        ]
+  let data = [
+    {
+      id: 1,
+      imgSrc: ekant,
+    },
+    {
+      id: 2,
+      imgSrc: sync,
+    },
+    {
+      id: 3,
+      imgSrc: amplify,
+    },
+    {
+      id: 4,
+      imgSrc: wow,
+    },
+    {
+      id: 5,
+      imgSrc: rap,
+    },
+  ];
   return (
     <>
-    <div className="inline-flex flex-col px-4 md:px-10 lg:px-24 w-full box-border h-fit bg-black">
-        <div className="font-font4 text-5xl text-white my-4 mx-auto">
-          Events
+      <div className="inline-flex flex-col px-4 md:px-10 lg:px-24 w-full box-border h-fit bg-black">
+        <div className="font-black text-5xl text-white my-4 mx-auto">
+          EVENTS
         </div>
         <div className="inline-flex flex-wrap w-full justify-center gap-4">
           {data.map((item) => {
@@ -61,7 +56,7 @@ export default function Event() {
         </div>
       </div>
     </>
-  )
+  );
 }
 // style={{width:'100%' , height:'400px' }}
 // style={{width:'100%' , height:'35px' }}
