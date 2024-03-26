@@ -80,7 +80,7 @@ const GalleryTW = () => {
 
   return (
     <div className="inline-flex flex-col px-4 md:px-10 lg:px-24 w-full box-border h-fit bg-black">
-      <div className="font-black text-5xl text-white my-4 mx-auto">GALLERY</div>
+      <div className="font-font5 text-5xl text-white my-4 mx-auto">Gallery</div>
       <div className="w-full h-[75vh] my-4">
         <img src={image} className="w-full h-full object-contain" alt="" />
       </div>

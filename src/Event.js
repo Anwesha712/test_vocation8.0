@@ -7,6 +7,7 @@ import ekant from './assets/ekant.png'
 import amp from './assets/amp.png'
 import sync from './assets/sync.png'
 import come from './assets/comings.png'
+import ant from './assets/ant.jpeg'
 
 export default function Event() {
     let data=[
@@ -32,7 +33,7 @@ export default function Event() {
         },
         {
             id: 6,
-            imgSrc: amp,
+            imgSrc: ant,
         }
         ]
   return (
@@ -48,12 +49,12 @@ export default function Event() {
                 <div className="w-full h-full">
                   <img
                     src={item.imgSrc}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
                 <div className="btn">
                   {" "}
-                  <button className="w-full"> REGISTER </button>{" "}
+                  <button className="w-full bg-[#DAFFED] text-black rounded-xl  hover:cursor-pointer hover:bg-gradient-to-r hover:font-bold from-[#3e3b92] to-[#f44369] hover:text-transparent hover:bg-clip-text"> REGISTER </button>{" "}
                 </div>
               </div>
             );

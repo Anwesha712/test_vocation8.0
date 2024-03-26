@@ -1,12 +1,12 @@
 
- .btn button{
+/* .btn button{
     margin-top:5px;
-    background-color: #059669; /*059669*/
+    background-color: #059669; 
     border-radius: 10px;
     color:white;
     font-size:20px;
     margin-bottom:10px;
-}
+} */
 
 .event{
     -webkit-column-count: 3;
@@ -21,9 +21,7 @@
     border-radius:12px;
 }
 
-button:hover{
-    background-color: #106b4e;
-}
+
 @media (max-width:950px){
     .event {
         -webkit-column-count: 3;
