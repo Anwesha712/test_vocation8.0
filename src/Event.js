@@ -1,8 +1,11 @@
 import React from 'react'
 import './event.css';
 import Img1 from './assets/Img1.jpeg';
+import { useNavigate } from "react-router-dom";
+import { Ev_pagetRoute } from "./routeProvider";
 
 export default function Event() {
+    const navigate = useNavigate();
     let data=[
         {
             id: 1,
@@ -39,7 +42,7 @@ export default function Event() {
                 return(
                     <div className="post" key={item.id}>
                         <img src={item.imgSrc} style={{width:'100%' , height:'350px' }} />
-                        <div className="btn" > <button style={{width:'100%' , height:'40px' }}> REGISTER </button> </div>
+                        <div > <button className="btn" style={{width:'100%' }} onClick={() => navigate(`${Ev_pagetRoute}`)}> REGISTER </button> </div>
                     </div> 
                      )
                     }
