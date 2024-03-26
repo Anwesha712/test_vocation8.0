@@ -33,14 +33,14 @@ export default function Event() {
         },
         {
             id: 6,
-            imgSrc: ant,
+            imgSrc: amp,
         }
         ]
   return (
     <>
-    <div className="inline-flex flex-col px-4 md:px-10 lg:px-24 w-full box-border h-fit bg-black">
-        <div className="font-font4 text-5xl text-white my-4 mx-auto">
-          Events
+      <div className="inline-flex flex-col px-4 md:px-10 lg:px-24 w-full box-border h-fit bg-black">
+        <div className="font-black text-5xl text-white my-4 mx-auto">
+          EVENTS
         </div>
         <div className="inline-flex flex-wrap w-full justify-center gap-4">
           {data.map((item) => {
@@ -62,7 +62,7 @@ export default function Event() {
         </div>
       </div>
     </>
-  )
+  );
 }
 // style={{width:'100%' , height:'400px' }}
 // style={{width:'100%' , height:'35px' }}
