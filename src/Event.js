@@ -1,35 +1,41 @@
+import React from 'react'
+import './event.css';
+import Img1 from './assets/Img1.jpeg';
+import rap from './assets/rap.jpg'
+import Wow from './assets/wow.png'
+import ekant from './assets/ekant.png'
+import amp from './assets/amp.png'
+import sync from './assets/sync.png'
+import come from './assets/comings.png'
+import ant from './assets/ant.jpeg'
 
-import React from "react";
-import "./event.css";
-import Img1 from "./assets/Img1.jpeg";
-import ekant from "./assets/EKANT.png";
-import sync from "./assets/SYNC 7.png";
-import amplify from "./assets/AMPLIFY.png";
-import wow from "./assets/Wings of words.png";
-import rap from "./assets/RAP.jpeg";
 export default function Event() {
-  let data = [
-    {
-      id: 1,
-      imgSrc: ekant,
-    },
-    {
-      id: 2,
-      imgSrc: sync,
-    },
-    {
-      id: 3,
-      imgSrc: amplify,
-    },
-    {
-      id: 4,
-      imgSrc: wow,
-    },
-    {
-      id: 5,
-      imgSrc: rap,
-    },
-  ];
+    let data=[
+        {
+            id: 1,
+            imgSrc: rap,
+        },
+        {
+            id: 2,
+            imgSrc: Wow,
+        },
+        {
+            id: 3,
+            imgSrc: ekant,
+        },
+        {
+            id: 4,
+            imgSrc: amp,
+        },
+        {
+            id: 5,
+            imgSrc: sync,
+        },
+        {
+            id: 6,
+            imgSrc: amp,
+        }
+        ]
   return (
     <>
       <div className="inline-flex flex-col px-4 md:px-10 lg:px-24 w-full box-border h-fit bg-black">
@@ -43,12 +49,12 @@ export default function Event() {
                 <div className="w-full h-full">
                   <img
                     src={item.imgSrc}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
                 <div className="btn">
                   {" "}
-                  <button className="w-full"> REGISTER </button>{" "}
+                  <button className="w-full bg-[#DAFFED] text-black rounded-xl  hover:cursor-pointer hover:bg-gradient-to-r hover:font-bold from-[#3e3b92] to-[#f44369] hover:text-transparent hover:bg-clip-text"> REGISTER </button>{" "}
                 </div>
               </div>
             );

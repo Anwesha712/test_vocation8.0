@@ -10,7 +10,7 @@ import NavbarSm from "./NavbarSm";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <div className="fixed bg-bg1 h-20 w-full drop-shadow-xl text-3xl text-white inline-flex justify-between items-center p-2">
+    <div className="fixed bg-bg1 h-20 w-full drop-shadow-xl text-3xl text-white inline-flex justify-between items-center p-2 z-50">
       <div className="h-20 w-20 drop-shadow-2xl flex items-center">
         <img src={Logo1} alt="logo" />
         <h1 className="text-3xl font-bold">SARGAM</h1>
