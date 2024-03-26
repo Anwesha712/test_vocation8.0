@@ -8,7 +8,11 @@ import { Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import Registration1 from "./Registration1";
 import Contact from "./Contact";
-import { RegistrationRoute, ContactRoute, Ev_pagetRoute } from "./routeProvider";
+import {
+  RegistrationRoute,
+  ContactRoute,
+  Ev_pagetRoute,
+} from "./routeProvider";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
@@ -24,7 +28,9 @@ function App() {
         <Route path={`/${ContactRoute}`} Component={Contact} />
       </Routes>
       <Routes>
-        <Route path={`/${Ev_pagetRoute}`} Component={Ev_page} />
+        <Route path="/event/:id" Component={Ev_page}>
+          {" "}
+        </Route>
       </Routes>
     </ChakraProvider>
   );
