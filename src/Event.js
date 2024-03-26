@@ -1,11 +1,10 @@
-
 import React from "react";
 import "./event.css";
 import Img1 from "./assets/Img1.jpeg";
 import ekant from "./assets/EKANT.png";
-import sync from "./assets/SYNC 7.png";
+import sync from "./assets/SYNC.png";
 import amplify from "./assets/AMPLIFY.png";
-import wow from "./assets/Wings of words.png";
+import wow from "./assets/wow.png";
 import rap from "./assets/RAP.jpeg";
 export default function Event() {
   let data = [
