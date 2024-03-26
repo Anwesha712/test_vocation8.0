@@ -9,6 +9,9 @@ module.exports = {
         bg1 : '#0b090a',
         bg2 : '#252422',
     },
+    backgroundImage: {
+      'bImg1': "url('./assets/Img12.jpeg')"
+    }
   },
   fontFamily: {
     font1: ["Elsie Swash Caps", "serif"],

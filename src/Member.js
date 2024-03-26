@@ -5,14 +5,14 @@ import Icon_insta from "./assets/icon_insta.png";
 import { Link } from "react-router-dom";
 import { members } from "./dataSet";
 const Member = () => {
-  const [visible, setVisible] = useState(11);
+  const [visible, setVisible] = useState(12);
   const others = () => {
     setVisible((prevValue) => prevValue + 4);
   };
   return (
     <>
       <div className="inline-flex flex-col px-2 md:px-10 lg:px-48 w-full box-border h-fit bg-black">
-        <div className="font-black text-5xl text-white my-4 mx-auto center">
+        <div className="font-font2 text-5xl text-white my-4 mx-auto center">
           MEMBERS
         </div>
         <div className=" inline-flex flex-wrap justify-center gap-2 w-full">

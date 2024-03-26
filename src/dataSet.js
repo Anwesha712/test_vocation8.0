@@ -16,7 +16,7 @@ const members = [
     id: 1,
     imgSrc: Srinjoy,
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
+      "I am Srinjoy Ghosh - The Passionate cultural head orchestrating musical events, fostering creativity, and uniting members through harmonious experiences.",
     name: "Srinjoy Ghosh",
     fb: "https://www.facebook.com/srinjoy.ghosh.92",
     insta: "https://www.instagram.com/_srinjoy_ghosh_/",
@@ -34,7 +34,7 @@ const members = [
     id: 3,
     imgSrc: Sarban,
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore exercitationem repudiandae!",
+      "Sarban Bose here, Diligent treasurer , managing finances for our vibrant musical club with precision and passion.",
     name: "Sarban Bose",
     fb: "https://www.facebook.com/profile.php?id=100008822837599",
     insta: "https://www.instagram.com/sarbanbose/",
