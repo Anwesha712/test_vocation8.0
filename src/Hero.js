@@ -7,7 +7,9 @@ import bg1 from "./assets/Img12.jpeg";
 const Hero = () => {
   const navigate = useNavigate();
   return (
-    <div className=" bg-black h-screen w-full items-center justify-center text-white inline-flex gap-4 flex-col md:flex-row ">
+
+    <div className=" bg-bImg1 bg-cover bg-no-repeat  h-screen w-full items-center justify-center text-white inline-flex gap-4 flex-col md:flex-row ">
+
       <Tilt className="h-3/5 lg:h-full px-20 box-border w-full md:w-2/5">
         <div className=" h-full w-full items-center justify-center">
           <img
