@@ -11,31 +11,37 @@
     width:600px;
     height:400px;
     display:flex;
+    padding: 10px;
     flex-direction:row;
     justify-content: center;
     background-color: rgb(60, 60, 60);
     border-radius: 10px;
 }
 .up_main .up_pic{
-    margin: 20px;
+    margin-right: 20px;
     border-radius: 10px;
+    height: auto;
+    width: 70%;
 }
 .up_main .up_pic img{
     border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 100%;
 }
 .up_write{
-    display:flex;
+    display:inline-flex;
     flex-direction:column;
+    padding-right: 20px;
     justify-content: space-evenly;
     width:60%;
-    padding-left: 10px;
+    height: 100%;
+    
     background-color: transparent;
     color:white;
     position:relative;
 }
 .head{
-    font-size:25px;
-    font-weight: bolder;
+    
 }
 hr{
     width: 30%;
@@ -43,10 +49,7 @@ hr{
     border-radius:5px ;
 }
 .arrow img{
-    width:30px;
-    position: absolute;
-    top:72%;
-    left:78%;
+    
 }
 
 @media (max-width:700px){
