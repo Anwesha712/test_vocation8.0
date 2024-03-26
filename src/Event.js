@@ -8,7 +8,7 @@ import amp from "./assets/amp.png";
 import sync from "./assets/sync.png";
 import come from "./assets/comings.png";
 import ant from "./assets/ant.jpeg";
-
+import { useNavigate, Link } from "react-router-dom";
 export default function Event() {
   let data = [
     {
@@ -33,7 +33,7 @@ export default function Event() {
     },
     {
       id: 6,
-      imgSrc: amp,
+      imgSrc: ant,
     },
   ];
   return (
@@ -53,11 +53,11 @@ export default function Event() {
                   />
                 </div>
                 <div className="btn">
-                  {" "}
-                  <button className="w-full bg-[#DAFFED] text-black rounded-xl  hover:cursor-pointer hover:bg-gradient-to-r hover:font-bold from-[#3e3b92] to-[#f44369] hover:text-transparent hover:bg-clip-text">
-                    {" "}
-                    REGISTER{" "}
-                  </button>{" "}
+                  <Link to={`/event/${item.id}`}>
+                    <button className="w-full bg-[#DAFFED] py-2 font-bold text-black rounded-xl  hover:cursor-pointer hover:bg-gradient-to-r hover:font-bold from-[#3e3b92] to-[#f44369] hover:text-transparent hover:bg-clip-text">
+                      REGISTER
+                    </button>
+                  </Link>
                 </div>
               </div>
             );

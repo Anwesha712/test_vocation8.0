@@ -1,49 +1,63 @@
-import React from 'react'
+import React from "react";
 import "./ev_page.css";
-import Img1 from "./assets/Img1.jpeg"
+import Img1 from "./assets/Img1.jpeg";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { eventData } from "./dataSetEvent";
+import { useParams } from "react-router-dom";
 
 export default function Ev_page() {
+  const id = useParams();
+  console.log(id.id);
   return (
     <>
-    <Navbar className="hidden lg:relative" />
-    <div className="ev_page_main bg-black text-white">
-    <div className="hero_pic">
-        <img src={Img1} />
-    </div>
-    <h1 style={{textAlign:'center',fontSize:'50px'}}>HEADING</h1>
-    <div className="ev_body">
-      <div className="ev_left">
-        <div className="ev_leftTop">
-          <h1 style={{fontSize:'30px'}} >GUIDELINE</h1>
-          <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur, Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sint aspernatur asperiores voluptates ad optio error ratione non tempore dolore! Provident doloribus, magnam quibusdam suscipit laudantium libero enim sint soluta necessitatibus neque alias illo recusandae praesentium esse quisquam optio, temporibus reprehenderit earum labore culpa dignissimos incidunt quis maiores nam? Repellat. ipsum dolor sit amet consectetur adipisicing elit. Eos inventore eaque cumque, saepe natus doloremque a aut consequuntur odio itaque omnis quo repellat ratione nobis. Repellat voluptatibus enim, beatae accusantium iure similique reiciendis natus explicabo amet laudantium sit, commodi illo sint necessitatibus voluptates ipsum voluptatem expedita ducimus nisi impedit aliquam? adipisicing elit. Repellendus nihil, perspiciatis dolore architecto fugiat dicta autem debitis ea culpa. Ad, culpa quasi. Voluptate minus et esse quidem maxime, quisquam inventore ullam obcaecati fuga culpa fugit eveniet repellat mollitia maiores? Cupiditate minima veritatis quis explicabo ratione vitae quas, aut fuga voluptas. dolor sit amet consectetur adipisicing elit. Unde est vel, commodi inventore possimus minima animi ullam deleniti dolorum veniam nemo temporibus perferendis, totam aspernatur labore officiis consectetur, nulla facere eius. Ex laboriosam tempore optio. Dolorem voluptate nihil, fuga at minus autem omnis animi tenetur voluptatum quae pariatur atque asperiores voluptatem labore necessitatibus, ea consequatur possimus numquam? Doloremque recusandae facere rerum itaque suscipit iusto, culpa est repudiandae? At quo ipsa neque, architecto, modi voluptatum maiores, unde nam dolore odio recusandae? Veniam, corrupti reprehenderit. Ullam rerum laudantium vel dolorum itaque! Rem inventore repellat id autem recusandae ipsa corrupti maxime quo non!</p>       
+      <Navbar className="hidden lg:relative" />
+      <div className="ev_page_main pt-12 bg-black text-white">
+        <div className="ev_top">
+          <div className="hero_pic">
+            <img src={eventData[id.id - 1].imgSrc} />
+          </div>
+          <div className="ev_right">
+            <h2 style={{ fontSize: "30px" }}>COORDINATORS</h2>
+            <p>
+              {eventData[id.id - 1].cdName1} - {eventData[id.id - 1].cdNumber1}
+            </p>
+            <p>
+              {eventData[id.id - 1].cdName2} - {eventData[id.id - 1].cdNumber2}
+            </p>
+            <h3 style={{ fontSize: "24px" }}>DEADLINE</h3>
+            <p>{eventData[id.id - 1].deadline}</p>
+            <button
+              className="btn bg-white text-black rounded-md py-2 font-bold"
+              style={{ padding: "5px 0 5px 0" }}>
+              REGISTER HERE
+            </button>
+          </div>
         </div>
-        <div className="prelims">
-        <h2 style={{fontSize:'30px'}}>PRELIMS</h2>
-        <span>Date : <span>abc</span> </span>
-        <span>Time : <span>abc</span> </span>
-        <span>Venue : <span>abc</span> </span>
-      </div>
-      <div className="finals">
-        <h2 style={{fontSize:'30px'}}>FINALS</h2>
-        <span>Date : <span>abc</span> </span>
-        <span>Time : <span>abc</span> </span>
-        <span>Venue : <span>abc</span> </span>
-      </div>
-      </div>
-        <div className="ev_right">
-        <h2 style={{fontSize:'30px'}}>COORDINATORS</h2>
-        <p>ABC - 99876134287</p>
-        <p>ABC - 99876134287</p>
-        <h3 style={{fontSize:'24px'}}>DEADLINE</h3>
-        <p>DDyymm</p>
-        <button className='btn'>REGISTER HERE</button>
+        <h1
+          style={{ textAlign: "center", fontSize: "50px", marginTop: "20px" }}>
+          {eventData[id.id - 1].headline}
+        </h1>
+        <div className="ev_bottom">
+          <div className="ev_bottomLeft">
+            <h1 style={{ fontSize: "30px" }}>GUIDELINE</h1>
+            <p> {eventData[id.id - 1].guide} </p>
+          </div>
+          <div className="finals">
+            <h2 style={{ fontSize: "30px" }}>FINALS</h2>
+            <span>
+              DATE : <span>{eventData[id.id - 1].finalDate}</span>{" "}
+            </span>
+            <span>
+              TIME : <span>{eventData[id.id - 1].finalTime}</span>{" "}
+            </span>
+            <span>
+              VENUE : <span>{eventData[id.id - 1].finalVenue}</span>{" "}
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <Footer />
-
+      <Footer />
     </>
-  )
+  );
 }
