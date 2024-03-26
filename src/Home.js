@@ -18,12 +18,13 @@ const Home = () => {
           <Event />
         </div>
         <GalleryTW />
-        <div className="p-4 bg-black h-fit w-full shadow-2xl items-center justify-center ">
-          <Member />
-        </div>
         <div className="p-4 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center ">
           <Up_event />
         </div>
+        <div className="p-4 bg-black h-fit w-full shadow-2xl items-center justify-center ">
+          <Member />
+        </div>
+        
         <Footer />
       </div>
     </>
