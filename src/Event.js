@@ -1,6 +1,6 @@
 import React from "react";
 import "./event.css";
-import Img1 from "./assets/Img1.jpeg";
+import Img1 from "./assets/Img1.webp";
 import rap from "./assets/rap.jpg";
 import Wow from "./assets/wow.png";
 import ekant from "./assets/ekant.png";

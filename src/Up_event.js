@@ -1,8 +1,8 @@
 import React from "react";
 import "./up_event.css";
-import Img1 from "./assets/Img1.jpeg";
+import Img1 from "./assets/Img1.webp";
 import mainpos from "./assets/mpos.jpg";
-import Icon_arrow from "./assets/icon_arrow.png";
+import Icon_arrow from "./assets/icon_arrow.webp";
 
 const Up_event = () => {
   let data = [

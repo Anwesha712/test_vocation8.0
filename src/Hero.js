@@ -1,9 +1,9 @@
 import React from "react";
-import Logo4 from "./assets/logo3.1.png";
+import Logo4 from "./assets/logo3.1.webp";
 import { Tilt } from "react-tilt";
 import { useNavigate } from "react-router-dom";
 import Registration1 from "./Registration1";
-import bg1 from "./assets/Img12.jpeg";
+import bg1 from "./assets/Img12.webp";
 const Hero = () => {
   const navigate = useNavigate();
   return (

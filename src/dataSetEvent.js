@@ -1,5 +1,5 @@
-import Img1 from "./assets/Img1.jpeg";
-import Img2 from "./assets/Img2.jpeg";
+import Img1 from "./assets/Img1.webp";
+import Img2 from "./assets/Img2.webp";
 const eventData = [
   {
     id: 1,
