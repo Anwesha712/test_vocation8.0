@@ -27,11 +27,15 @@ export default function Ev_page() {
             </p>
             <h3 style={{ fontSize: "24px" }}>DEADLINE</h3>
             <p>{eventData[id.id - 1].deadline}</p>
-            <button
-              className="btn bg-white text-black rounded-md py-2 font-bold"
-              style={{ padding: "5px 0 5px 0" }}>
-              REGISTER HERE
-            </button>
+            {eventData[id.id - 1].formUrl.length > 5 && (
+              <Link to={eventData[id.id - 1].formUrl}>
+                <button
+                  className="btn bg-white text-black rounded-md py-2 font-bold"
+                  style={{ padding: "5px 0 5px 0" }}>
+                  REGISTER HERE
+                </button>
+              </Link>
+            )}
           </div>
         </div>
         <h1
