@@ -1,6 +1,6 @@
 import React from "react";
 import "./ev_page.css";
-import Img1 from "./assets/Img1.jpeg";
+import Img1 from "./assets/Img1.webp";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { eventData } from "./dataSetEvent";

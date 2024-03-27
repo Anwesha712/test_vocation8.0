@@ -10,7 +10,7 @@ module.exports = {
         bg2 : '#252422',
     },
     backgroundImage: {
-      'bImg1': "url('./assets/Img12.jpeg')"
+      'bImg1': "url('./assets/Img12.webp')"
     }
   },
   fontFamily: {

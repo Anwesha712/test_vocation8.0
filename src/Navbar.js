@@ -1,5 +1,5 @@
 import React from "react";
-import Logo1 from "./assets/logo1.png";
+import Logo1 from "./assets/logo1.webp";
 import { useNavigate } from "react-router-dom";
 import Registration1 from "./Registration1";
 import NavItem from "./utils/navItem";

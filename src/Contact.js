@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Logo1 from "./assets/logo1.png"
-import FB from "./assets/fb1.png"
-import Insta from "./assets/insta1.png"
-import YT from "./assets/youtube_1.png"
-import Gmail from "./assets/gmail1.png"
+import Logo1 from "./assets/logo1.webp"
+import FB from "./assets/fb1.webp"
+import Insta from "./assets/insta1.webp"
+import YT from "./assets/youtube_1.webp"
+import Gmail from "./assets/gmail1.webp"
 import { Link } from 'react-router-dom'
 
 const Contact = () => {

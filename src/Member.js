@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./member.css";
-import Icon_fb from "./assets/icon_fb.png";
-import Icon_insta from "./assets/icon_insta.png";
+import Icon_fb from "./assets/icon_fb.webp";
+import Icon_insta from "./assets/icon_insta.webp";
 import { Link } from "react-router-dom";
 import { members } from "./dataSet";
 const Member = () => {

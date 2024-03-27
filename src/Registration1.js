@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo4 from "./assets/logo3.1.png"
-import Logo1 from "./assets/logo1.png"
+import Logo4 from "./assets/logo3.1.webp"
+import Logo1 from "./assets/logo1.webp"
 
 
 const Registration1 = () => {

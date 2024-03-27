@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import Close from "./assets/closeImg.png";
-import Img1 from "./assets/Img1.jpeg";
-import Img2 from "./assets/Img2.jpeg";
-import Img3 from "./assets/Img3.jpeg";
-import Img4 from "./assets/Img4.jpeg";
-import Img5 from "./assets/Img5.jpeg";
-import Img6 from "./assets/Img6.jpeg";
-import Img7 from "./assets/Img7.jpeg";
-import Img8 from "./assets/Img8.jpeg";
-import Img9 from "./assets/Img9.jpeg";
-import Img10 from "./assets/Img10.jpeg";
-import Img11 from "./assets/Img11.jpeg";
-import Img12 from "./assets/Img12.jpeg";
-import Img13 from "./assets/Img13.jpeg";
+import Close from "./assets/closeImg.webp";
+import Img1 from "./assets/Img1.webp";
+import Img2 from "./assets/Img2.webp";
+import Img3 from "./assets/Img3.webp";
+import Img4 from "./assets/Img4.webp";
+import Img5 from "./assets/Img5.webp";
+import Img6 from "./assets/Img6.webp";
+import Img7 from "./assets/Img7.webp";
+import Img8 from "./assets/Img8.webp";
+import Img9 from "./assets/Img9.webp";
+import Img10 from "./assets/Img10.webp";
+import Img11 from "./assets/Img11.webp";
+import Img12 from "./assets/Img12.webp";
+import Img13 from "./assets/Img13.webp";
 let data = [
   {
     id: 1,

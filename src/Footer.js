@@ -1,6 +1,6 @@
 import React from "react";
-import fb from "./assets/fb1.png";
-import insta from "./assets/insta1.png";
+import fb from "./assets/fb1.webp";
+import insta from "./assets/insta1.webp";
 import { Divider } from "@chakra-ui/react";
 const Footer = () => {
   return (
