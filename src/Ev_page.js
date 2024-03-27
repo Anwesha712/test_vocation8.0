@@ -4,7 +4,7 @@ import Img1 from "./assets/Img1.jpeg";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { eventData } from "./dataSetEvent";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 export default function Ev_page() {
   const id = useParams();
@@ -29,9 +29,7 @@ export default function Ev_page() {
             <p>{eventData[id.id - 1].deadline}</p>
             {eventData[id.id - 1].formUrl.length > 5 && (
               <Link to={eventData[id.id - 1].formUrl}>
-                <button
-                  className="btn bg-white text-black rounded-md py-2 font-bold"
-                  style={{ padding: "5px 0 5px 0" }}>
+                <button className="btn bg-white text-black rounded-md font-bold px-4 py-2">
                   REGISTER HERE
                 </button>
               </Link>
