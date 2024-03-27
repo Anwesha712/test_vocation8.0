@@ -28,9 +28,14 @@ export default function Ev_page() {
             <h3 style={{ fontSize: "24px" }}>DEADLINE</h3>
             <p>{eventData[id.id - 1].deadline}</p>
             <button
-              className="btn bg-white text-black rounded-md py-2 font-bold"
+              className="btn_1 bg-white text-black rounded-md py-2 font-bold"
               style={{ padding: "5px 0 5px 0" }}>
               REGISTER HERE
+            </button>
+            <button
+              className="btn_2 border-white bg-black text-white rounded-md py-2 font-bold"
+              style={{ padding: "5px 0 5px 0" }}>
+              DOWNLOAD BROCHURE
             </button>
           </div>
         </div>

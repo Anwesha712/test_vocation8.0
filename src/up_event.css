@@ -83,10 +83,15 @@ hr{
 @media (max-width:500px){
     .up_main{
         width:300px;
-        height:500px;
+        height:600px;
         display:flex;
         flex-direction:column;
         justify-content:center;
+    }
+    .up_main .up_pic{
+        width:230px;
+        height:260px;
+        margin-left:20px;
     }
     .up_main .up_pic img{
         border-radius: 10px;

@@ -44,7 +44,9 @@
 .finals > span {
   font-size: 20px;
 }
-
+.btn_2{
+  border:2px solid white;
+}
 @media (max-width: 600px) {
   .ev_top {
     margin: 20px;
