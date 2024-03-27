@@ -46,7 +46,7 @@
     opacity: 0;
     transform:scale(0) ;
     overflow: hidden;
-    z-index:6;
+    z-index:3;
 
 }
 .model.open{

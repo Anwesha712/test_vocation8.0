@@ -3,13 +3,13 @@ import Srinjoy from "./assets/SrinjoyGhosh.jpg";
 import Patatri from "./assets/PatatriSinha.jpeg";
 import Sarban from "./assets/SarbanBose.jpg";
 import Sammonnay from "./assets/SammonnaySarcar.jpeg";
+import Joyorshi from "./assets/JoyorshiDe.jpg";
+import Parag from "./assets/ParagChakraborty.jpeg";
 import Sourish from "./assets/SourishGuha.jpeg";
 import Sampreeti from "./assets/SampreetiDas.jpg";
 import Shrestho from "./assets/ShresthoChakraborty.jpg";
 import Gairika from "./assets/GairikaKarmakar.jpeg";
 import Ahana from "./assets/AhanaSaha.jpeg";
-import Parag from "./assets/ParagChakraborty.jpeg";
-import Joyorshi from "./assets/JoyorshiDe.jpg";
 import Riyanshu from "./assets/RiyanshuBaskey.jpeg";
 const members = [
   {
@@ -74,7 +74,6 @@ const members = [
     fb: "https://www.facebook.com/joyorshi.de",
     insta: "https://www.instagram.com/joyorshi_de/",
   },
-
   {
     id: 7,
     imgSrc: Sourish,

@@ -4,35 +4,44 @@
       column-count: 3; 
     padding: 20px 50px 0px; 
 }*/
+.main_head{
+    text-align: center;
+}
 .up_main{
-    height:300px;
+    width:600px;
+    height:400px;
     display:flex;
+    padding: 10px;
     flex-direction:row;
     justify-content: center;
     background-color: rgb(60, 60, 60);
     border-radius: 10px;
 }
 .up_main .up_pic{
-    margin-top: 20px;
+    margin-right: 20px;
     border-radius: 10px;
-    width:20%;
+    height: auto;
+    width: 70%;
 }
 .up_main .up_pic img{
     border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 100%;
 }
 .up_write{
-    display:flex;
+    display:inline-flex;
     flex-direction:column;
+    padding-right: 20px;
     justify-content: space-evenly;
     width:60%;
-    padding-left: 10px;
+    height: 100%;
+    
     background-color: transparent;
     color:white;
     position:relative;
 }
 .head{
-    font-size:25px;
-    font-weight: bolder;
+    
 }
 hr{
     width: 30%;
@@ -40,22 +49,62 @@ hr{
     border-radius:5px ;
 }
 .arrow img{
-    width:30px;
-    position: absolute;
-    top:65%;
-    left:80%;
+    
 }
 
-/*@media (max-width:900px){
-    .up {
-        -webkit-column-count: 2;
-        -moz-column-count: 2; 
-        column-count: 2; 
-        padding: 20px; 
+@media (max-width:700px){
+    .up_main{
+        width:400px;
+        height:600px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
     }
-    .up_pic img{
-        margin-top: 10px;
-        
+    .up_main .up_pic img{
+        border-radius: 10px;
     }
-}*/
+    .head{
+        margin-bottom:20px;
+    }
+    .body{
+        margin-bottom:20px; 
+    }
+    .up_write{
+        width:100%;
+        padding:10px;
+    }
+    .arrow img{
+        position:absolute;
+        top:80%;
+        left:80%;
+    }
+}
+
+@media (max-width:500px){
+    .up_main{
+        width:300px;
+        height:500px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .up_main .up_pic img{
+        border-radius: 10px;
+    }
+    .head{
+        margin-bottom:20px;
+    }
+    .body{
+        margin-bottom:20px; 
+    }
+    .up_write{
+        width:100%;
+        padding:10px;
+    }
+    .arrow img{
+        position:absolute;
+        top:80%;
+        left:80%;
+    }
+}
 

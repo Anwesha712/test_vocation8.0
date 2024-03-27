@@ -3,11 +3,16 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Hero2 from "./Hero2";
 import Home from "./Home";
+import Ev_page from "./Ev_page";
 import { Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import Registration1 from "./Registration1";
 import Contact from "./Contact";
-import { RegistrationRoute, ContactRoute } from "./routeProvider";
+import {
+  RegistrationRoute,
+  ContactRoute,
+  Ev_pagetRoute,
+} from "./routeProvider";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
@@ -21,6 +26,11 @@ function App() {
       </Routes>
       <Routes>
         <Route path={`/${ContactRoute}`} Component={Contact} />
+      </Routes>
+      <Routes>
+        <Route path="/event/:id" Component={Ev_page}>
+          {" "}
+        </Route>
       </Routes>
     </ChakraProvider>
   );

@@ -12,8 +12,8 @@ const Member = () => {
   return (
     <>
       <div className="inline-flex flex-col px-2 md:px-10 lg:px-48 w-full box-border h-fit bg-black">
-        <div className="font-black text-5xl text-white my-4 mx-auto center">
-          MEMBERS
+        <div className="font-font2 text-5xl text-white my-4 mx-auto center">
+          Members
         </div>
         <div className=" inline-flex flex-wrap justify-center gap-2 w-full">
           {members.slice(0, visible).map((item) => {
@@ -25,7 +25,7 @@ const Member = () => {
                 />
                 <div className="write text-white w-full h-full box-border px-2">
                   <div className="about leading-tight">{item.about}</div>
-                  <div className="name text-center font-semibold">
+                  <div className="name text-center font-semibold font-font5">
                     {item.name}
                   </div>
                   <div className="link inline-flex">
