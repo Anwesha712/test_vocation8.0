@@ -15,7 +15,7 @@ import NavItem from "./utils/navItem";
 import { GalleryRoute, ContactRoute } from "./routeProvider";
 import CTA from "./utils/CTA";
 
-function NavbarSm() {
+function NavbarSm({ scroll }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
@@ -47,11 +47,11 @@ function NavbarSm() {
 
           <DrawerBody className="inline-flex justify-center flex-col">
             <ul className="flex items-center w-full flex-col ">
-              <NavItem title={"Home"} nav={"/"} />
-              <NavItem title={"Gallery"} nav={GalleryRoute} />
-              <NavItem title={"Events"} nav={"/"} />
-              <NavItem title={"Contact"} nav={`${ContactRoute}`} />
-              <NavItem title={"Members"} nav={"/"} />
+              <NavItem scroll={scroll} n={1} title={"Home"} />
+              <NavItem scroll={scroll} n={2} title={"Gallery"} />
+              <NavItem scroll={scroll} n={3} title={"Events"} />
+              <NavItem scroll={scroll} n={4} title={"Contact"} />
+              <NavItem scroll={scroll} n={5} title={"Members"} />
               <CTA />
             </ul>
           </DrawerBody>

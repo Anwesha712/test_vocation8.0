@@ -15,7 +15,7 @@ const Navbar = ({ scroll }) => {
         <img src={Logo1} alt="logo" />
         <h1 className="text-3xl font-bold">SARGAM</h1>
       </div>
-      <NavbarSm />
+      <NavbarSm scroll={scroll} />
       <div className="hidden lg:flex text-lg font-medium items-center">
         <ul className="flex items-center w-full ">
           <NavItem scroll={scroll} n={1} title={"Home"} />
