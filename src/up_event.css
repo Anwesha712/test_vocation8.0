@@ -20,6 +20,8 @@
 .up_main .up_pic {
   margin-right: 20px;
   border-radius: 10px;
+  height: auto;
+  width: 70%;
 }
 .up_main .up_pic img {
   border-radius: 10px 0 0 10px;
@@ -76,35 +78,35 @@ hr {
   }
 }
 
-@media (max-width:500px){
-    .up_main{
-        width:300px;
-        height:600px;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-    }
-    .up_main .up_pic{
-        width:230px;
-        height:260px;
-        margin-left:20px;
-    }
-    .up_main .up_pic img{
-        border-radius: 10px;
-    }
-    .head{
-        margin-bottom:20px;
-    }
-    .body{
-        margin-bottom:20px; 
-    }
-    .up_write{
-        width:100%;
-        padding:10px;
-    }
-    .arrow img{
-        position:absolute;
-        top:80%;
-        left:80%;
-    }
+@media (max-width: 500px) {
+  .up_main {
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .up_main .up_pic {
+    width: 230px;
+    height: 260px;
+    margin-left: 20px;
+  }
+  .up_main .up_pic img {
+    border-radius: 10px;
+  }
+  .head {
+    margin-bottom: 20px;
+  }
+  .body {
+    margin-bottom: 20px;
+  }
+  .up_write {
+    width: 100%;
+    padding: 10px;
+  }
+  .arrow img {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+  }
 }

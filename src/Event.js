@@ -24,11 +24,11 @@ export default function Event() {
       imgSrc: ekant,
     },
     {
-      id: 4,
+      id: 5,
       imgSrc: amp,
     },
     {
-      id: 5,
+      id: 4,
       imgSrc: sync,
     },
     {
