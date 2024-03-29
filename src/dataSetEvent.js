@@ -1,9 +1,16 @@
 import Img1 from "./assets/Img1.webp";
 import Img2 from "./assets/Img2.webp";
+import rap from "./assets/rap.jpg";
+import Wow from "./assets/wow.png";
+import ekant from "./assets/ekant.png";
+import amp from "./assets/amp.png";
+import sync from "./assets/sync.png";
+import come from "./assets/comings.png";
+import ant from "./assets/ant.jpeg";
 const eventData = [
   {
     id: 1,
-    imgSrc: Img1,
+    imgSrc: rap,
     guide: `	Each round must not exceed 1-3 minutes, with an overall event limit of 4 minutes (3+1). 
       	Offensive language or inappropriate content is strictly prohibited. 
       	Rappers will be evaluated based on lyrical content, flow, delivery, and creativity. 
@@ -23,7 +30,7 @@ const eventData = [
   },
   {
     id: 2,
-    imgSrc: Img2,
+    imgSrc: Wow,
     guide: `	The program will commence promptly at 9:30 am. 
         	Participants can choose to recite a piece of writing in English, Hindi, or Bengali, or they can recite their own compositions in the mentioned languages. 
         	There is a rigorous 4-minute time limit. Evaluations will be made exclusively based on the participant's performance and presentation. The judges' verdict shall be considered final. 
@@ -43,7 +50,7 @@ const eventData = [
   },
   {
     id: 3,
-    imgSrc: Img1,
+    imgSrc: ekant,
     guide: `	The program will commence promptly at 09:30 am.
           	Participants may utilize backing tracks, to be uploaded to a pen drive. Another individual may accompany them with a musical instrument or an electronic Tanpura.
             There's a strict 4-minute time limit, including 1 minute for sound check and 3 minutes for performance.
@@ -64,7 +71,7 @@ const eventData = [
       "https://docs.google.com/forms/d/1DhJKWlb_b3eQH7BUhzvku2hh2ibDYvepLjCExODDAkc/edit#settings",
   },
   {
-    id: 4,
+    id: sync,
     imgSrc: Img1,
     guide: `	The program will commence promptly at 9.30 am.
           	The participating band is expected to bring all of the musical equipments. There will only be a five-piece drum kit available. 
@@ -86,7 +93,7 @@ const eventData = [
   },
   {
     id: 5,
-    imgSrc: Img1,
+    imgSrc: amp,
     guide: `	The program will commence promptly at 9:30 am.
           	Participants are required to bring all their musical equipments, only a drum kit will be provided. The performance must adhere to a 4-minute time limit, including 1 minute for sound check and 3 minutes for the performance.
           	The performance will be the only factor used to make the decision. The decision-making process will solely be based on the performance exhibited by the participants. The verdict rendered by the judges shall be regarded as conclusive and final.
@@ -106,7 +113,7 @@ const eventData = [
   },
   {
     id: 6,
-    imgSrc: Img1,
+    imgSrc: ant,
     guide: `	This is an on-the-spot competition where three teams compete in each round, with the winner receiving a CASH PRIZE right away.
           	There will be two people in each team. 
           	The Antakshari standard rules will apply to the event, along with a few amendments. Details about the modifications will be announced during the event. 
@@ -122,6 +129,7 @@ const eventData = [
     finalDate: "7th April",
     finalTime: "11:00 AM",
     finalVenue: "MSIT Campus",
+    formUrl: "",
   },
 ];
 
