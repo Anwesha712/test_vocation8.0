@@ -49,6 +49,7 @@
 }
 .btn_2{
   border:2px solid white;
+  width:100%;
 }
 @media (max-width: 600px) {
   .ev_top {
