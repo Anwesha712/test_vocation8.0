@@ -5,6 +5,7 @@ import Member from "./Member";
 import Footer from "./Footer";
 import Event from "./Event";
 import UpEvent from "./Up_event";
+import Download from "./Download";
 import React, { useRef } from "react";
 const Home = () => {
   const sectionRefs = {
@@ -30,7 +31,9 @@ const Home = () => {
         <div>
           <Hero />
         </div>
-
+        <div className=" bg-black ">
+          <Download />
+        </div>
         <div
           ref={sectionRefs.section3}
           className="p-4 -mt-2 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center ">

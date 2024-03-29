@@ -44,7 +44,12 @@
 .finals > span {
   font-size: 20px;
 }
-
+.btn{
+  width:100%;
+}
+.btn_2{
+  border:2px solid white;
+}
 @media (max-width: 600px) {
   .ev_top {
     margin: 20px;
@@ -63,5 +68,8 @@
   }
   .ev_bottom {
     width: 80%;
+  }
+  .btn_2{
+    margin-top:10px;
   }
 }

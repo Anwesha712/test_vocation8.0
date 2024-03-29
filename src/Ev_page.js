@@ -34,6 +34,9 @@ export default function Ev_page() {
                 </button>
               </Link>
             )}
+            <button className="btn_2 bg-black text-white rounded-md font-bold px-4 py-2">
+              DOWNLOAD BROCHURE
+            </button>
           </div>
         </div>
         <h1

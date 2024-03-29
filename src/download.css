@@ -1,0 +1,16 @@
+.download{
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    background-color: rgb(75, 143, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top:94%;
+    right:4%;
+    z-index:5;
+}
+.download:hover{
+    background-color: rgb(47, 92, 92);
+}
