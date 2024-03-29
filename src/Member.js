@@ -11,7 +11,7 @@ const Member = () => {
   };
   return (
     <>
-      <div className="inline-flex flex-col px-2 md:px-10 lg:px-48 w-full box-border h-fit bg-black">
+      <div className="inline-flex flex-col px-2 md:px-8 my-10 lg:px-48 w-full box-border h-fit bg-black">
         <div className="font-font2 text-5xl text-white my-4 mx-auto center">
           Members
         </div>

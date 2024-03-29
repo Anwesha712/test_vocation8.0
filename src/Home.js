@@ -39,13 +39,10 @@ const Home = () => {
         <div ref={sectionRefs.section2}>
           <GalleryTW />
         </div>
-
-        <div className="p-4 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center ">
-          <UpEvent />
-        </div>
+        <UpEvent />
         <div
           ref={sectionRefs.section5}
-          className="p-4 bg-black h-fit w-full shadow-2xl items-center justify-center ">
+          className=" bg-black h-fit w-full shadow-2xl items-center justify-center ">
           <Member />
         </div>
         <div ref={sectionRefs.section4}>
