@@ -1,20 +1,19 @@
 .download{
-    height:35px;
-    width:35px;
+    height:55px;
+    width:55px;
     border-radius: 50%;
-    background-color: rgb(75, 143, 143);
     display: flex;
     justify-content: center;
     align-items: center;
     position:fixed;
-    top:94%;
-    right:4%;
+    top:93%;
+    right:2%;
     z-index:5;
 }
 .download img{
-    padding-left: 5px;
+    padding-left: 11px;
 }
 .download:hover{
-    background-color: rgb(47, 92, 92);
+    background-color: rgba(34, 64, 64, 0.608);
 }
 

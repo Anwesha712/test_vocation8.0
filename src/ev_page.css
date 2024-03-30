@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-left:20px;
 }
 .ev_bottom {
   display: flex;
@@ -74,3 +75,10 @@
     margin-top:10px;
   }
 }
+/*{eventData[id.id - 1].formUrl.length > 5 && ( 
+              <Link to={eventData[id.id - 1].formUrl}>
+                <button className="btn bg-white text-black rounded-md font-bold px-4 py-2 font-font1 ">
+                {eventData[id.id - 1].btnName}
+                </button>
+              </Link>
+            )}*/

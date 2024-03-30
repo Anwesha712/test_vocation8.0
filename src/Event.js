@@ -2,12 +2,13 @@ import React from "react";
 import "./event.css";
 import Img1 from "./assets/Img1.webp";
 import rap from "./assets/rap.jpg";
-import Wow from "./assets/wow.png";
+import Wow from "./assets/wow.jpeg";
 import ekant from "./assets/ekant.png";
-import amp from "./assets/amp.png";
+import amp from "./assets/amp.jpeg";
 import sync from "./assets/sync.png";
 import come from "./assets/comings.png";
 import ant from "./assets/ant.jpeg";
+
 import { useNavigate, Link } from "react-router-dom";
 export default function Event() {
   let data = [
@@ -44,12 +45,12 @@ export default function Event() {
         </div>
         <div className="inline-flex flex-wrap w-full justify-center gap-4">
           {data.map((item) => {
-            return (
+            return ( 
               <div className="inline-flex flex-col w-80 h-96" key={item.id}>
                 <div className="w-full h-full">
                   <img
                     src={item.imgSrc}
-                    className="w-full h-full object-cover rounded-xl"
+                    className="object-scale-down w-full h-full object-cover rounded-xl"
                   />
                 </div>
                 <div className="btn">
