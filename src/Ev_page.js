@@ -32,13 +32,13 @@ export default function Ev_page() {
               DEADLINE
             </h3>
             <p className="font-font3">{eventData[id.id - 1].deadline}</p>
-            {eventData[id.id - 1].formUrl.length > 5 && (
+            
               <Link to={eventData[id.id - 1].formUrl}>
                 <button className="btn bg-white text-black rounded-md font-bold px-4 py-2 font-font1 ">
-                  REGISTER HERE
+                {eventData[id.id - 1].btnName}
                 </button>
               </Link>
-            )}
+            
             <a href={brochure} download="Vocation_brochure"><button className="btn_2 bg-black text-white rounded-md font-bold px-4 py-2 font-font1">
               DOWNLOAD BROCHURE
             </button> </a> 

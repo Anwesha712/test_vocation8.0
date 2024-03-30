@@ -1,9 +1,9 @@
 import Img1 from "./assets/Img1.webp";
 import Img2 from "./assets/Img2.webp";
 import rap from "./assets/rap.jpg";
-import Wow from "./assets/wow.png";
+import Wow from "./assets/wow.jpeg";
 import ekant from "./assets/ekant.png";
-import amp from "./assets/amp.png";
+import amp from "./assets/amp.jpeg";
 import sync from "./assets/sync.png";
 import come from "./assets/comings.png";
 import ant from "./assets/ant.jpeg";
@@ -24,9 +24,10 @@ const eventData = [
     cdNumber2: "9432669245",
     deadline: "7th April",
     finalDate: "7th April",
-    finalTime: "11:00 AM",
+    finalTime: "9:30 AM",
     finalVenue: "MSIT Campus",
     formUrl: "https://forms.gle/7d68JMjBpon56pGv7",
+    btnName: "REGISTER HERE",
   },
   {
     id: 2,
@@ -43,10 +44,11 @@ const eventData = [
     cdNumber2: "8013139984",
     deadline: "7th April",
     finalDate: "7th April",
-    finalTime: "11:00 AM",
+    finalTime: "9:30 AM",
     finalVenue: "MSIT Campus",
     formUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSfzyLf-8tI7RQSxMCDorKQ2Fw3zpBtL3n6xCpdXPsmlH4AwiA/viewform?usp=sf_link",
+    btnName: "REGISTER HERE",
   },
   {
     id: 3,
@@ -65,14 +67,15 @@ const eventData = [
     cdNumber2: "8697377856",
     deadline: "7th April",
     finalDate: "7th April",
-    finalTime: "11:00 AM",
+    finalTime: "9:30 AM",
     finalVenue: "MSIT Campus",
     formUrl:
       "https://docs.google.com/forms/d/1DhJKWlb_b3eQH7BUhzvku2hh2ibDYvepLjCExODDAkc/edit#settings",
+    btnName: "REGISTER HERE",
   },
   {
     id: sync,
-    imgSrc: Img1,
+    imgSrc: sync,
     guide: `	The program will commence promptly at 9.30 am.
           	The participating band is expected to bring all of the musical equipments. There will only be a five-piece drum kit available. 
             Bands must perform within a 15-minute time limit, including a 3- minute sound check and 12-minute performance, with a minimum of four and a maximum of eight members. 
@@ -86,10 +89,11 @@ const eventData = [
     cdNumber2: "9432669245",
     deadline: "7th April",
     finalDate: "7th April",
-    finalTime: "11:00 AM",
+    finalTime: "9:30 AM",
     finalVenue: "MSIT Campus",
     formUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSdUxyXQRpiC--rIubXxmwtA_ZKVjIJdARhm7mJt8OT3gZEa-A/viewform?usp=sf_link",
+    btnName: "REGISTER HERE",
   },
   {
     id: 5,
@@ -106,10 +110,11 @@ const eventData = [
     cdNumber2: "7059815797",
     deadline: "7th April",
     finalDate: "7th April",
-    finalTime: "11:00 AM",
+    finalTime: "9:30 AM",
     finalVenue: "MSIT Campus",
     formUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSeT7l22O88wZuvjv_-8xvYgYrTOfuTbxOdNSCUDyR9VhUEOBw/viewform?usp=sf_link",
+    btnName: "REGISTER HERE",
   },
   {
     id: 6,
@@ -127,9 +132,10 @@ const eventData = [
     cdNumber2: "8697377856",
     deadline: "7th April",
     finalDate: "7th April",
-    finalTime: "11:00 AM",
+    finalTime: "9:30 AM",
     finalVenue: "MSIT Campus",
     formUrl: "",
+    btnName: "ON SPOT REGISTRATION",
   },
 ];
 
