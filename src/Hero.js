@@ -4,7 +4,7 @@ import { Tilt } from "react-tilt";
 import { useNavigate } from "react-router-dom";
 import Registration1 from "./Registration1";
 import bg1 from "./assets/Img12.webp";
-const Hero = () => {
+const Hero = ({scroll}) => {
   const navigate = useNavigate();
   return (
     <div className=" bg-bImg1 bg-cover bg-no-repeat  h-screen w-full items-center justify-center text-white inline-flex gap-4 flex-col md:flex-row ">
@@ -30,7 +30,7 @@ const Hero = () => {
         </h1>
         <p className="px-2">This is the best Music Competition in Kolkata.</p>
         <div className="p-2">
-          <button className="bg-white rounded-full text-black font-bold h-10 w-fit text-xl">
+          <button onClick={()=>{scroll('section3')}} className="bg-white rounded-full text-black font-bold h-10 w-fit text-xl">
             <p className="bg-gradient-to-r from-[#3e3b92] to-[#f44369] text-transparent font-font1 bg-clip-text p-1 px-4 box-border">
               Register Below
             </p>

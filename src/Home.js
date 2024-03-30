@@ -29,7 +29,7 @@ const Home = () => {
       <div ref={sectionRefs.section1} className="inline-flex flex-col">
         <Navbar scroll={scrollToSection} className="hidden lg:relative" />
         <div>
-          <Hero />
+          <Hero scroll={scrollToSection}/>
         </div>
         <div className=" bg-black ">
           <Download />

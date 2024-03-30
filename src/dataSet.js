@@ -16,7 +16,7 @@ const members = [
     id: 1,
     imgSrc: Srinjoy,
     about:
-      "I am Srinjoy Ghosh - The Passionate cultural head orchestrating musical events, fostering creativity, and uniting members through harmonious experiences.",
+      "The Passionate cultural head orchestrating musical events, fostering creativity, and uniting members through harmonious experiences.",
     name: "Srinjoy Ghosh",
     fb: "https://www.facebook.com/srinjoy.ghosh.92",
     insta: "https://www.instagram.com/_srinjoy_ghosh_/",
@@ -87,7 +87,7 @@ const members = [
     id: 8,
     imgSrc: Shrestho,
     about:
-      "Shrestho Chakraborty this side. Currently the Deputy Cultural Head of the Club. Dedicating all my musicality towards the Cultural enhancement of the club.",
+      "Shrestho Chakraborty this side. The Deputy Cultural Head. Working to enhance the musicality of the club",
     name: "Shrestho Chakraborty",
     fb: "https://www.facebook.com/shrestha.chakraborty.5249?mibextid=ZbWKwL",
     insta:
@@ -99,8 +99,8 @@ const members = [
     about:
       "As a cultural advisor, I'm here to foster creativity, collaboration, and a deep appreciation for all genres.",
     name: "Gairika Karmakar",
-    fb: "https://www.facebook.com/",
-    insta: "https://www.facebook.com/",
+    fb: "",
+    insta: "https://www.instagram.com/gairika_",
   },
   {
     id: 10,
