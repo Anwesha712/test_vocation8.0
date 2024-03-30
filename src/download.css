@@ -11,6 +11,10 @@
     right:4%;
     z-index:5;
 }
+.download img{
+    padding-left: 5px;
+}
 .download:hover{
     background-color: rgb(47, 92, 92);
 }
+

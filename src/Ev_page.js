@@ -3,6 +3,7 @@ import "./ev_page.css";
 import Img1 from "./assets/Img1.webp";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import brochure from "./assets/VOCATIONS 8.0 By SARGAM Brochure 2024 (1).pdf";
 import { eventData } from "./dataSetEvent";
 import { useParams, Link } from "react-router-dom";
 
@@ -38,9 +39,9 @@ export default function Ev_page() {
                 </button>
               </Link>
             )}
-            <button className="btn_2 bg-black text-white rounded-md font-bold px-4 py-2 font-font1">
+            <a href={brochure} download="Vocation_brochure"><button className="btn_2 bg-black text-white rounded-md font-bold px-4 py-2 font-font1">
               DOWNLOAD BROCHURE
-            </button>
+            </button> </a> 
           </div>
         </div>
         <h1

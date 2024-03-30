@@ -21,7 +21,7 @@ function App() {
   // Simulate loading time
   const [loading, setLoading] = useState(true);
   useEffect(() => { 
-    const timeout = setTimeout(() => setLoading(false), 2000);
+    const timeout = setTimeout(() => setLoading(false), 4000);
     return () => clearTimeout(timeout);
   }, []);
 
