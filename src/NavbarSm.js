@@ -52,7 +52,6 @@ function NavbarSm({ scroll }) {
               <NavItem scroll={scroll} n={3} title={"Events"} />
               <NavItem scroll={scroll} n={4} title={"Contact"} />
               <NavItem scroll={scroll} n={5} title={"Members"} />
-              <CTA />
             </ul>
           </DrawerBody>
         </DrawerContent>

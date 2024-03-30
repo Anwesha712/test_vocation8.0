@@ -7,9 +7,7 @@ import bg1 from "./assets/Img12.webp";
 const Hero = () => {
   const navigate = useNavigate();
   return (
-
     <div className=" bg-bImg1 bg-cover bg-no-repeat  h-screen w-full items-center justify-center text-white inline-flex gap-4 flex-col md:flex-row ">
-
       <Tilt className="h-3/5 lg:h-full px-20 box-border w-full md:w-2/5">
         <div className=" h-full w-full items-center justify-center">
           <img
@@ -32,11 +30,9 @@ const Hero = () => {
         </h1>
         <p className="px-2">This is the best Music Competition in Kolkata.</p>
         <div className="p-2">
-          <button
-            onClick={() => navigate("/Registration")}
-            className="bg-white rounded-full text-black font-bold h-10 w-fit text-xl">
+          <button className="bg-white rounded-full text-black font-bold h-10 w-fit text-xl">
             <p className="bg-gradient-to-r from-[#3e3b92] to-[#f44369] text-transparent font-font1 bg-clip-text p-1 px-4 box-border">
-              Register
+              Register Below
             </p>
           </button>
         </div>

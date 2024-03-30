@@ -19,46 +19,64 @@ export default function Ev_page() {
             <img src={eventData[id.id - 1].imgSrc} />
           </div>
           <div className="ev_right">
-            <h2 style={{ fontSize: "30px" }}>COORDINATORS</h2>
-            <p>
+            <h2 style={{ fontSize: "30px" }} className="font-font5">
+              COORDINATORS
+            </h2>
+            <p className="font-font3">
               {eventData[id.id - 1].cdName1} - {eventData[id.id - 1].cdNumber1}
             </p>
-            <p>
+            <p className="font-font3">
               {eventData[id.id - 1].cdName2} - {eventData[id.id - 1].cdNumber2}
             </p>
-            <h3 style={{ fontSize: "24px" }}>DEADLINE</h3>
-            <p>{eventData[id.id - 1].deadline}</p>
+            <h3 style={{ fontSize: "24px" }} className="font-font5">
+              DEADLINE
+            </h3>
+            <p className="font-font3">{eventData[id.id - 1].deadline}</p>
             {eventData[id.id - 1].formUrl.length > 5 && (
               <Link to={eventData[id.id - 1].formUrl}>
-                <button className="btn bg-white text-black rounded-md font-bold px-4 py-2">
+                <button className="btn bg-white text-black rounded-md font-bold px-4 py-2 font-font1 ">
                   REGISTER HERE
                 </button>
               </Link>
             )}
-            <a href={brochure} download="Vocation_brochure"> <button className="btn_2 bg-black text-white rounded-md font-bold px-4 py-2">
+            <button className="btn_2 bg-black text-white rounded-md font-bold px-4 py-2 font-font1">
               DOWNLOAD BROCHURE
             </button> </a>
           </div>
         </div>
         <h1
-          style={{ textAlign: "center", fontSize: "50px", marginTop: "20px" }}>
+          style={{ textAlign: "center", fontSize: "50px", marginTop: "20px" }}
+          className="font-font2">
           {eventData[id.id - 1].headline}
         </h1>
         <div className="ev_bottom">
           <div className="ev_bottomLeft">
-            <h1 style={{ fontSize: "30px" }}>GUIDELINE</h1>
-            <p> {eventData[id.id - 1].guide} </p>
+            <h1 style={{ fontSize: "30px" }} className="font-font4">
+              Guideline
+            </h1>
+            <p className="font-font3"> {eventData[id.id - 1].guide} </p>
           </div>
           <div className="finals">
-            <h2 style={{ fontSize: "30px" }}>FINALS</h2>
-            <span>
-              DATE : <span>{eventData[id.id - 1].finalDate}</span>{" "}
+            <h2 style={{ fontSize: "30px" }} className="font-font4">
+              Time
+            </h2>
+            <span className="font-font3">
+              DATE :{" "}
+              <span className="font-font3">
+                {eventData[id.id - 1].finalDate}
+              </span>{" "}
             </span>
-            <span>
-              TIME : <span>{eventData[id.id - 1].finalTime}</span>{" "}
+            <span className="font-font3">
+              TIME :{" "}
+              <span className="font-font3">
+                {eventData[id.id - 1].finalTime}
+              </span>{" "}
             </span>
-            <span>
-              VENUE : <span>{eventData[id.id - 1].finalVenue}</span>{" "}
+            <span className="font-font3">
+              VENUE :{" "}
+              <span className="font-font3">
+                {eventData[id.id - 1].finalVenue}
+              </span>{" "}
             </span>
           </div>
         </div>
