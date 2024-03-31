@@ -1,8 +1,6 @@
 import React from "react";
 import "./up_event.css";
-import Img1 from "./assets/Img1.webp";
 import mainpos from "./assets/mpos.jpg";
-import Icon_arrow from "./assets/icon_arrow.webp";
 
 const Up_event = () => {
   let data = [
@@ -21,55 +19,57 @@ const Up_event = () => {
         Upcoming Events
       </div>
       <div className="up inline-flex flex-wrap justify-center gap-2 w-full">
-        {data.map((item) => {
-          return (
-            <>
-              <div className="up_main">
-                <div className="up_pic" key={item.id}>
-                  <img
-                    src={item.imgSrc}
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </div>
-                <div className="up_write">
-                  <div
-                    className="head font-font3 text-3xl "
-                    style={{ background: "transparent" }}>
-                    {item.head} <hr />
-                  </div>
-                  <div
-                    className="body leading-tight"
-                    style={{ background: "transparent" }}>
-                    {item.body}
-                  </div>
-                  <div className=" inline-flex w-full justify-between">
-                    <div
-                      className="date_ven"
-                      style={{ background: "transparent" }}>
-                      <div
-                        className="date font-bold"
-                        style={{ background: "transparent" }}>
-                        <span style={{ background: "transparent" }}>
-                          DATE :{" "}
-                        </span>
-                        {item.date}
-                      </div>
-                      <div
-                        className="venue font-bold"
-                        style={{ background: "transparent" }}>
-                        <span style={{ background: "transparent" }}>
-                          VENUE :{" "}
-                        </span>
-                        {item.venue}
-                      </div>
-                    </div>
-                    {/* <div className="arrow w-10 h-10 hover:drop-shadow-xl hover:bg-white " style={{background:"transparent"}}> <img className='w-full h-full object-cover ' src={Icon_arrow}style={{background:"transparent"}}/></div> */}
-                  </div>
-                </div>
+        {data.map((item) => (
+          <div className="up_main" key={item.id}>
+            <div className="up_pic" >
+              <img
+                src={item.imgSrc}
+                style={{ width: "100%", height: "100%" }}
+                alt=""
+              />
+            </div>
+            <div className="up_write">
+              <div
+                className="head font-font3 text-3xl "
+                style={{ background: "transparent" }}
+              >
+                {item.head} <hr />
               </div>
-            </>
-          );
-        })}
+              <div
+                className="body leading-tight"
+                style={{ background: "transparent" }}
+              >
+                {item.body}
+              </div>
+              <div className=" inline-flex w-full justify-between">
+                <div
+                  className="date_ven"
+                  style={{ background: "transparent" }}
+                >
+                  <div
+                    className="date font-bold"
+                    style={{ background: "transparent" }}
+                  >
+                    <span style={{ background: "transparent" }}>
+                      DATE :{" "}
+                    </span>
+                    {item.date}
+                  </div>
+                  <div
+                    className="venue font-bold"
+                    style={{ background: "transparent" }}
+                  >
+                    <span style={{ background: "transparent" }}>
+                      VENUE :{" "}
+                    </span>
+                    {item.venue}
+                  </div>
+                </div>
+                {/* <div className="arrow w-10 h-10 hover:drop-shadow-xl hover:bg-white " style={{background:"transparent"}}> <img className='w-full h-full object-cover ' src={Icon_arrow}style={{background:"transparent"}}/></div> */}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
