@@ -7,6 +7,7 @@ import Event from "./Event";
 import UpEvent from "./Up_event";
 import Download from "./Download";
 import React, { useRef } from "react";
+import { MemberPage } from "./MemberPage";
 const Home = () => {
   const sectionRefs = {
     section1: useRef(null),
@@ -55,6 +56,7 @@ const Home = () => {
           <Footer />
         </div>
       </div>
+      <MemberPage/>
     </>
   );
 };
