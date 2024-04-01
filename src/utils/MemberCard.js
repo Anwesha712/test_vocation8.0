@@ -6,7 +6,7 @@ export const MemberCard = ({item}) => {
   return (
     <div className="photo w-[45%] h-72 md:w-60 md:h-64" key={item.id}>
                 <img
-                  src="https://drive.google.com/uc?id=1KjFuWjde7e7W89SsZQx5yZVkg8o8H8Cd"
+                  src="https://drive.google.com/uc?export=view&id=1dRBl6XF-TiIMnLHiXEBW7HeUr7aYO51a"
                   className="image object-cover h-full w-full"
                 />
                 <div className="write text-white w-full h-full box-border px-2">
