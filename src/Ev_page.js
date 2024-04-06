@@ -12,7 +12,6 @@ export default function Ev_page() {
   console.log(id.id);
   return (
     <>
-      <Navbar className="hidden lg:relative" />
       <div className="ev_page_main pt-12 bg-black text-white">
         <div className="ev_top">
           <div className="hero_pic">
@@ -32,21 +31,24 @@ export default function Ev_page() {
               DEADLINE
             </h3>
             <p className="font-font3">{eventData[id.id - 1].deadline}</p>
-            
-              <Link to={eventData[id.id - 1].formUrl}>
-                <button className="btn bg-white text-black rounded-md font-bold px-4 py-2 font-font1 ">
+
+            <Link to={eventData[id.id - 1].formUrl}>
+              <button className="btn bg-white text-black rounded-md font-bold px-4 py-2 font-font1 ">
                 {eventData[id.id - 1].btnName}
-                </button>
-              </Link>
-            
-            <a href={brochure} download="Vocation_brochure"><button className="btn_2 bg-black text-white rounded-md font-bold px-4 py-2 font-font1">
-              DOWNLOAD BROCHURE
-            </button> </a> 
+              </button>
+            </Link>
+
+            <a href={brochure} download="Vocation_brochure">
+              <button className="btn_2 bg-black text-white rounded-md font-bold px-4 py-2 font-font1">
+                DOWNLOAD BROCHURE
+              </button>{" "}
+            </a>
           </div>
         </div>
         <h1
           style={{ textAlign: "center", fontSize: "50px", marginTop: "20px" }}
-          className="font-font2">
+          className="font-font2"
+        >
           {eventData[id.id - 1].headline}
         </h1>
         <div className="ev_bottom">
