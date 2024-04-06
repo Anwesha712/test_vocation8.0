@@ -4,11 +4,13 @@ import Icon_insta from "../assets/icon_insta.webp";
 import { Link } from "react-router-dom";
 export const MemberCard = ({item}) => {
   return (
-    <div className="photo w-[45%] h-72 md:w-60 md:h-64" key={item.id}>
-                <img
-                  src="https://drive.google.com/uc?export=view&id=1dRBl6XF-TiIMnLHiXEBW7HeUr7aYO51a"
+    
+          <div className="a_photo w-[45%] h-72 md:w-60 md:h-64 " key={item.id}>
+                {/* <img
+                  src="https://drive.google.com/file/d/11uVqKHl6fLWnjjg_-F5kakREYDiXpLWa/view?usp=sharing"
                   className="image object-cover h-full w-full"
-                />
+                /> */}
+                <iframe src={item.imgSrc} width="100%"  height="100%"  className="image object-cover h-full w-full grayscale "></iframe>
                 <div className="write text-white w-full h-full box-border px-2">
                   <div className="about leading-tight">{item.about}</div>
                   <div className="name text-center font-semibold font-font5">
@@ -44,5 +46,7 @@ export const MemberCard = ({item}) => {
                   </div>
                 </div>
               </div>
+            
+          
   )
 }
