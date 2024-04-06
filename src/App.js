@@ -9,10 +9,12 @@ import { Route} from "react-router-dom";
 import { Routes } from "react-router-dom";
 import Registration1 from "./Registration1";
 import Contact from "./Contact";
+import {MemberPage} from "./MemberPage";
 import {
   RegistrationRoute,
   ContactRoute,
   Ev_pagetRoute,
+  Member_Page
 } from "./routeProvider";
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -43,6 +45,9 @@ function App() {
         <Route path="/event/:id" Component={Ev_page}>
           {" "}
         </Route>
+      </Routes>
+      <Routes>
+        <Route path={`/${Member_Page}`} Component={MemberPage} />
       </Routes>
       </div>
       )}

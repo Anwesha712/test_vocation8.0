@@ -1,6 +1,9 @@
 import React from "react";
 import "./up_event.css";
 import mainpos from "./assets/mpos.jpg";
+import Guest from "./assets/guestPoster.jpeg";
+import Timer from "./Timer.js";
+import GuestVid from "./assets/guest_video.mp4";
 
 const Up_event = () => {
   let data = [
@@ -18,7 +21,8 @@ const Up_event = () => {
       <div className="main_head font-font3 text-5xl text-white my-4 mx-auto center">
         Upcoming Events
       </div>
-      <div className="up inline-flex flex-wrap justify-center gap-2 w-full">
+      <div className="upFront">
+      <div className="up ">
         {data.map((item) => (
           <div className="up_main" key={item.id}>
             <div className="up_pic" >
@@ -70,6 +74,40 @@ const Up_event = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="carousel">
+        <div className="carousel_top" style={{height:'80%'}}>
+        <div id="carouselExampleIndicators" className="carousel slide" style={{height:'100%'}}>
+  <div className="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 0"></button>
+    {/*<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>*/}
+  </div>
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src={Guest} className="d-block w-100" style={{objectFit:'cover', padding:'10px',borderRadius:'20px'}} alt="..."/>
+    </div>
+    
+    <div className="carousel-item">
+     <video width="200" autoPlay className="guest_vid" controls >
+      <source src={GuestVid} type="video/mp4"/>
+     </video>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+      <div className="carousel_bottom">
+        <Timer/>
+      </div>
+      </div>
+      </div>
       </div>
     </>
   );
