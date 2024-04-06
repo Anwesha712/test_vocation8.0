@@ -1,56 +1,57 @@
-import React, { useState, useEffect } from 'react';
-import Preloader from './Preloader';
+import React, { useState, useEffect, useRef } from "react";
+import Preloader from "./Preloader";
 import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Hero2 from "./Hero2";
 import Home from "./Home";
 import Ev_page from "./Ev_page";
-import { Route} from "react-router-dom";
-import { Routes } from "react-router-dom";
-import Registration1 from "./Registration1";
-import Contact from "./Contact";
-import {
-  RegistrationRoute,
-  ContactRoute,
-  Ev_pagetRoute,
-} from "./routeProvider";
+import { Routes, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 function App() {
-  
   // Simulate loading time
   const [loading, setLoading] = useState(true);
-  useEffect(() => { 
+  useEffect(() => {
     const timeout = setTimeout(() => setLoading(false), 4000);
     return () => clearTimeout(timeout);
   }, []);
-
+  const navigate = useNavigate();
+  const sectionRefs = {
+    section1: useRef(null),
+    section2: useRef(null),
+    section3: useRef(null),
+    section4: useRef(null),
+    section5: useRef(null),
+  };
+  const scrollToSection = (section) => {
+    navigate("/");
+    if (sectionRefs[section].current) {
+      setTimeout(() => {
+        sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
+      }, 400); // Adjust the delay (in milliseconds) as needed
+    }
+  };
   return (
-    <>
     <ChakraProvider>
-    {loading ? (<Preloader />) : ( 
-      <div>
-      <Routes>
-      <Route path="/" Component={Home} />
-      </Routes>
-      <Routes>
-        <Route path={`/${RegistrationRoute}`} Component={Registration1} />
-      </Routes>
-      <Routes>
-        <Route path={`/${ContactRoute}`} Component={Contact} />
-      </Routes>
-      <Routes>
-        <Route path="/event/:id" Component={Ev_page}>
-          {" "}
-        </Route>
-      </Routes>
-      </div>
+      {loading ? (
+        <Preloader />
+      ) : (
+        <>
+          <Navbar scroll={scrollToSection} className="hidden lg:relative" />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  sectionRefs={sectionRefs}
+                  scrollToSection={scrollToSection}
+                />
+              }
+            />
+            <Route path="/event/:id" element={<Ev_page />} />
+          </Routes>
+        </>
       )}
-
     </ChakraProvider>
-  
-  
-    </>
   );
 }
 
