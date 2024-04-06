@@ -1,47 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import moment from 'moment';
 
 const Timer = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+  const [timeLeft, setTimeLeft] = useState('');
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
-      const endDate = new Date('2024-04-07').getTime(); // Change the end date as needed
+    const endTime = moment().add(1, 'days').startOf('day').add(17, 'hours');
+    
+    const interval = setInterval(() => {
+      const now = moment();
+      const duration = moment.duration(endTime.diff(now));
+      const hours = duration.hours();
+      const minutes = duration.minutes();
+      const seconds = duration.seconds();
 
-      const timeDifference = endDate - now;
-
-      const hours = Math.floor(timeDifference / (1000 * 60 * 60));
-      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-      setTimeLeft({
-        hours: formatTime(hours),
-        minutes: formatTime(minutes),
-        seconds: formatTime(seconds),
-      });
-
-      if (timeDifference < 0) {
-        clearInterval(timer);
-        setTimeLeft({ hours: '00', minutes: '00', seconds: '00' });
+      setTimeLeft(`${hours}:${minutes}:${seconds}`);
+      
+      if (duration.asSeconds() <= 0) {
+        clearInterval(interval);
+        setTimeLeft('00:00:00');
       }
     }, 1000);
 
-    return () => clearInterval(timer);
+    return () => clearInterval(interval);
   }, []);
-
-  const formatTime = (time) => {
-    return time < 10 ? `0${time}` : time.toString();
-  };
 
   return (
     <div>
-      <div>{timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds} </div>
-      {/*<div>Minutes: {timeLeft.minutes}</div>
-      <div>Seconds: {timeLeft.seconds}</div>*/}
+      <h1>Countdown Timer</h1>
+      <div>{timeLeft}</div>
     </div>
   );
 };
