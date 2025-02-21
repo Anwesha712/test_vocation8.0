@@ -1,6 +1,6 @@
 import React from "react";
 import Logo1 from "./assets/logo1.webp";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import Registration1 from "./Registration1";
 import NavItem from "./utils/navItem";
 import CTA from "./utils/CTA";
@@ -8,9 +8,9 @@ import Gallery from "./gallery";
 import { GalleryRoute, RegistrationRoute, ContactRoute } from "./routeProvider";
 import NavbarSm from "./NavbarSm";
 const Navbar = ({ scroll }) => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   return (
-    <div className="fixed bg-bg1 h-20 w-full drop-shadow-xl text-3xl text-white inline-flex justify-between items-center p-2 z-50">
+    <div className="fixed bg-bg1 h-20 w-full drop-shadow-xl text-3xl text-white inline-flex justify-between items-center p-2 z-50 shadow-[0_0_10px_rgba(255,255,255,0.8)] ">
       <div className="h-20 w-20 drop-shadow-2xl flex items-center">
         <img src={Logo1} alt="logo" />
         <h1 className="text-3xl font-bold">SARGAM</h1>
