@@ -1,13 +1,17 @@
 import React from "react";
 import "./event.css";
-import Img1 from "./assets/Img1.webp";
-import rap from "./assets/rap.jpg";
-import Wow from "./assets/wow.jpeg";
-import ekant from "./assets/ekant.png";
-import amp from "./assets/amp.jpeg";
-import sync from "./assets/sync.png";
-import come from "./assets/comings.png";
-import ant from "./assets/ant.jpeg";
+import rap from "./assets/hip hop havoc-min.png";
+import Wow from "./assets/wings of words-min.png";
+import ekant from "./assets/ekant-min.png";
+import amp from "./assets/amplify-min.png";
+import sync from "./assets/SYNC (3)-min.png";
+import ant from "./assets/antakshari-min.png";
+import art from "./assets/artractive-min.png";
+import cb from "./assets/camera bondi final-min.png";
+import cs from "./assets/corral scribbles final-min.png";
+import lc from "./assets/Lights Camera Action - Poster-min.png";
+import re from "./assets/REELVERSE - Poster-min.png";
+
 
 import { useNavigate, Link } from "react-router-dom";
 export default function Event() {
@@ -36,6 +40,26 @@ export default function Event() {
       id: 6,
       imgSrc: ant,
     },
+    {
+      id:7,
+      imgSrc:art,
+    },
+    {
+      id:8,
+      imgSrc:cb,
+    },
+    {
+      id:9,
+      imgSrc:cs,
+    },
+    {
+      id:10,
+      imgSrc:lc,
+    },
+    {
+      id:11,
+      imgSrc:re,
+    }
   ];
   return (
     <>
@@ -46,7 +70,7 @@ export default function Event() {
         <div className="inline-flex flex-wrap w-full justify-center gap-4">
           {data.map((item) => {
             return ( 
-              <div className="inline-flex flex-col w-80 h-96" key={item.id}>
+              <div className="inline-flex flex-col w-80 h-120" key={item.id}>
                 <div className="w-full h-full">
                   <img
                     src={item.imgSrc}
@@ -55,9 +79,9 @@ export default function Event() {
                 </div>
                 <div className="btn">
                   <Link to={`/event/${item.id}`}>
-                    <button className="w-full bg-[#DAFFED] py-2 font-bold text-black rounded-xl  hover:cursor-pointer hover:bg-gradient-to-r hover:font-bold from-[#3e3b92] to-[#f44369] hover:text-transparent hover:bg-clip-text">
-                      REGISTER
-                    </button>
+                  <button className="w-full bg-[#DAFFED] py-2 font-bold text-black rounded-xl transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-gradient-to-r hover:from-[#3e3b92] hover:via-[#6b50e6] hover:to-[#f44369] hover:shadow-lg hover:scale-105 hover:bg-opacity-100">
+                    REGISTER
+                  </button>
                   </Link>
                 </div>
               </div>

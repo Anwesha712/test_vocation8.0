@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./up_event.css";
-import mainpos from "./assets/mpos.jpg";
+import mainpos from "./assets/vocations9.jpeg";
 import Guest from "./assets/guestPoster.jpeg";
 import Timer from "./Timer.js";
 import GuestVid from "./assets/guest_video.mp4";
