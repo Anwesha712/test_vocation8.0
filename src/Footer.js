@@ -21,7 +21,7 @@ Here harmonizing talents , fostering creativity and elevating campus melodies. F
           Contact Us: 7605802236
           <div className="inline-flex justify-center gap-4">
             <div className="w-8">
-               <img src={fb} className="w-full object-contain" alt="" onClick={(e) => {e.preventDefault(); window.location.href='https://www.facebook.com/sargam2016msit';}}/> 
+              <img src={fb} className="w-full object-contain" alt="" onClick={(e) => {e.preventDefault(); window.location.href='https://www.facebook.com/sargam2016msit';}}/> 
             </div>
             <div className="w-8">
               <img src={insta} className="w-full object-contain" alt=""onClick={(e) => {e.preventDefault(); window.location.href='https://www.instagram.com/sargam_msit/';}} />
