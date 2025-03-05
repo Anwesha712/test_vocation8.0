@@ -64,6 +64,9 @@ hr{
   display: flex;
   justify-content: center;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  border-radius: 50%;
+}
 .guest_vid{
   margin-left: 100px;
 }
