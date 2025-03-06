@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import "./ev_page.css";
 import Img1 from "./assets/Img1.webp";
 import Navbar from "./Navbar";
@@ -9,15 +10,18 @@ import { useParams, Link } from "react-router-dom";
 
 export default function Ev_page() {
   const id = useParams();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component mounts
+  }, []);
   console.log(id.id);
   return (
     <>
       <div className="ev_page_main pt-12 bg-black text-white">
         <div className="ev_top">
-          <div className="hero_pic">
+          <div className="hero_pic mt-10">
             <img src={eventData[id.id - 1].imgSrc} />
           </div>
-          <div className="ev_right">
+          <div className="ev_right mt-10">
             <h2 style={{ fontSize: "30px" }} className="font-font5">
               COORDINATORS
             </h2>

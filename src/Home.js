@@ -19,7 +19,7 @@ const Home = ({ sectionRefs, scrollToSection }) => {
         </div>
         <div
           ref={sectionRefs.section3}
-          className="p-4 -mt-2 bg-black h-5/5 w-4/4 shadow-2xl items-center justify-center "
+          className="p-4 -mt-4 bg-black h-full w-4/4 shadow-2xl items-center justify-center "
         >
           <Event />
         </div>
